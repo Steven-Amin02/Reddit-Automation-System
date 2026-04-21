@@ -1,0 +1,14 @@
+﻿{
+  "Name": "SLOT(1)",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "oTmabamHw0mJtTGJn9slaQ",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/oTmabamHw0mJtTGJn9slaQ",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/YzUZ5txEA0SBdgxbMQ9p7Q",
+  "Created": "2026-04-20T16:21:40.6521479Z",
+  "Updated": "2026-04-20T16:21:40.6521479Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

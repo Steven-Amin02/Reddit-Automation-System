@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="s1dJRY2G4USMHrWHeJwmNg" Reference="aFzI3n0Yi0y89QDoYmAtZA/bB_ocmG3bkeT937r2vWBwA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/login" DesignTimeRectangle="629, 179, 660, 0" ElementVisibilityArgument="Interactive" Guid="d3dd7985-4b2c-43bc-859f-d40089be87b4" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HsT6gSj4kEeGCKF3gROIkA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com" DesignTimeRectangle="759, 748, 364, 25" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='login-password' tag='FACEPLATE-TEXT-INPUT' /&gt;&lt;webctrl shadowhostid='login-password' tag='INPUT' /&gt;" Guid="8461ebf5-e24d-4b5f-9a05-96eea5d5bb26" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reddit - The heart of the internet' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="290c4aee0e7b18f1d66389d8aac9495f.jpg" xmlns="">0JjPtE05jx0aXpQ4rGj3CTQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

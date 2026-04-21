@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yq0ublNVHk64wBGOa4V-vg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/login" DesignTimeRectangle="739, 294, 460, 276" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;shreddit-app&amp;gt;auth-flow-manager&amp;gt;span&amp;gt;faceplate-partial&amp;gt;auth-flow-login&amp;gt;faceplate-tabpanel&amp;gt;faceplate-form&amp;gt;auth-flow-modal&amp;gt;div&amp;gt;div' parentid='login' tag='DIV' /&gt;" Guid="a0731a6b-8c7b-4dc2-8dac-c8ababe32523" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome to Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="23e684a2a6f1b43e3b2f571fa5972962.jpg" xmlns="">01AuY8KusFEWYVYvtIXQL8g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

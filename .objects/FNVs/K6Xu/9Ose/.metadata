@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Reddit - The heart of the internet",
+  "Type": "Screen",
+  "Id": "9OseqQOa6k-dMJsjFhQoDQ",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/9OseqQOa6k-dMJsjFhQoDQ",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/K6Xufvh5ME2vfCoDpuZqyw",
+  "Created": "2026-04-20T13:34:51.6975039Z",
+  "Updated": "2026-04-20T13:34:51.6975039Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

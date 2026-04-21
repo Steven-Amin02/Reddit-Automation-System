@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="g85Spy7qxEK5dCNTBrEf3Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="google.com/search" DesignTimeRectangle="739, 914, 460, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='login' tag='BUTTON' type='button' class='login w-100 oidc oidc-hide&amp;#xA;button-large px-[calc(var(--rem16)-var(--button-border-width,0px))]&amp;#xA;button-brand&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;items-center justify-center&amp;#xA;button inline-flex ' aaname='                     Log In               ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Log In' /&gt;" Guid="147d40b4-4fee-4786-baba-bcb824d2318c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome to Reddit' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="944, 915, 50, 58" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log In' parentid='login' tag='SPAN' type='' class='flex items-center gap-xs' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Log In' /&gt;" Guid="4dd9347d-2676-4eac-a9d6-6abb7dd1e2b8" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b70bd97cecf00fa13630f584ec60d9bd.jpg" xmlns="">0SZ3QN2dMb028wOT9hfgiyw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

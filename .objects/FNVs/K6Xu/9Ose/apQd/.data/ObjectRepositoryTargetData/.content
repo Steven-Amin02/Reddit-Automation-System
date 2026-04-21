@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8lNbftsnLEiC7dU_756cYQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com" DesignTimeRectangle="1845, 118, 50, 52" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='UserDrawerMenu_SZvQJM' tag='ACTIVATE-FEATURE' /&gt;" Guid="73f7fa2c-4464-4a4a-be0e-a14e9ad4e547" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reddit - The heart of the internet' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0fd7cb39c0f8685f7ce04e34d94fde88.jpg" xmlns="">0ZjdeLLysbkmXmVpyQAbTAw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SWkXjF6EAEKSIQ9jFunYSw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/login" DesignTimeRectangle="639, 179, 660, 0" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='AUTH-FLOW-MODAL' /&gt;&lt;webctrl idx='6' shadowhostid='' tag='SLOT' /&gt;" Guid="120b2ca8-7d38-463f-80e4-716142812f54" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome to Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f2f50f9e8a940cdd14b06d2a5b6636ba.jpg" xmlns="">0eLUw6cRU0EGW9AV232mHgw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

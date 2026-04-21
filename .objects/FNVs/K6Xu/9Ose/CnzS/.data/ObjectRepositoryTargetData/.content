@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="swLYnkAgb0eokVmolIvcww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/user/Steven_Amin" DesignTimeRectangle="569, 324, 20, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='profile-header-main' tag='svg' /&gt;" Guid="a2ae7b74-6eaa-4204-90d3-e731e58ead88" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="91b8e7e438acd63a1434ca838340ef4b.jpg" xmlns="">0-wTT-SjltUS4BIT9SR19jw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

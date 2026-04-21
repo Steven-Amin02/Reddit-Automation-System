@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4lmqkONjHkOs-NSH7zRXfQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/user/Steven_Amin" DesignTimeRectangle="1248, 710, 36, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='profile-avatar-upload-modal-rpl-modal-card' tag='SPAN' type='' class='flex items-center gap-xs' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Save' /&gt;" Guid="0ba7b6e8-91f6-4efb-b27e-ab683c4e6c81" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1233, 709, 66, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='   Save   ' parentid='profile-avatar-upload-modal-rpl-modal-card' tag='BUTTON' type='' class='&amp;#xA;button-medium px-[calc(var(--rem12)-var(--button-border-width,0px))]&amp;#xA;button-primary&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;items-center justify-center&amp;#xA;button inline-flex ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Save' /&gt;" Guid="7429fba4-e8eb-4371-800b-bd5cb1162ba3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="231c14e3f2ef611cbf462b79a6d50a3e.jpg" xmlns="">08gtpjRfF90Gv4jiPRF0PFw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

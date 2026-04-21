@@ -1,0 +1,14 @@
+﻿{
+  "Name": "View Profile",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "57vCuAJyi02l4N4jabnyaw",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/57vCuAJyi02l4N4jabnyaw",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/9OseqQOa6k-dMJsjFhQoDQ",
+  "Created": "2026-04-20T17:10:52.0913637Z",
+  "Updated": "2026-04-20T17:10:52.0913637Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

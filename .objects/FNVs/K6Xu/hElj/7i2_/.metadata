@@ -1,0 +1,13 @@
+﻿{
+  "Name": "SLOT(1)",
+  "Type": "Element",
+  "Id": "7i2_zS63dUamXMC1I_GQqQ",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/7i2_zS63dUamXMC1I_GQqQ",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/hEljt2P21kmwSVLp10t_fg",
+  "Created": "2026-04-20T16:13:21.1217955Z",
+  "Updated": "2026-04-20T16:13:21.1217955Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

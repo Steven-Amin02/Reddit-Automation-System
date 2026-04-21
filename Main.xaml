@@ -1,0 +1,214 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="810,1952.0000000000002" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="484.8,1928.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="path">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String">D:\Steven Amin\edited.jpg</Literal>
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="password" />
+        <Variable x:TypeArguments="x:String" Name="username" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Reddit - The heart of the internet" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1845.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1652" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'IMG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reddit.com" ContentHash="GW_Pxbd6S0m8COiKvEsoUA" DesignTimeRectangle="1850, 123, 40, 40" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="e85c8172-4913-49bc-8e6a-3834eec77ea4" InformativeScreenshot="c98caeed3dd33d4150141cd7994ecd4d.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/UlgXLaIaaUeUSN6rXMnnYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reddit - The heart of the internet' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'View Profile'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reddit.com" ContentHash="zWPaPNkgdESaDvNgZSyJqw" DesignTimeRectangle="1655, 182, 99, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='text-body-2' parentid='user-drawer-content' tag='SPAN' /&gt;" Guid="c6a693b1-018c-4832-886d-6830e067f51d" InformativeScreenshot="76e226fe25c0f8476f6911ac08060078.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/57vCuAJyi02l4N4jabnyaw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reddit - The heart of the internet' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="2" DisplayName="Click 'svg'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="swLYnkAgb0eokVmolIvcww" DesignTimeRectangle="569, 324, 20, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='profile-header-main' tag='svg' /&gt;" Guid="a2ae7b74-6eaa-4204-90d3-e731e58ead88" InformativeScreenshot="91b8e7e438acd63a1434ca838340ef4b.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/CnzSxqpWSkuLWOTHe21TDA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click 'Select a new image'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="7cNIewv8xEShYyzr_zGtmg" DesignTimeRectangle="1069, 620, 130, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SETTINGS-AVATAR-IMAGE-UPLOAD' /&gt;&lt;webctrl aaname='Select a new image' shadowhostid='' tag='SPAN' type='' class='flex items-center gap-xs' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Select a new image' /&gt;" Guid="b1f3d15d-089c-4174-9df4-8ab0ff74c8df" InformativeScreenshot="1157c8cf255f18efa3c634bfd83bbaa1.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/J-ZTxf3yXUKGPS-Rg64R2w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="1056, 619, 156, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='SETTINGS-AVATAR-IMAGE-UPLOAD' /&gt;&lt;webctrl aaname='   Select a new image   ' shadowhostid='' tag='BUTTON' type='' class='placeholder-select-image&amp;#xA;button-small px-[calc(var(--rem10)-var(--button-border-width,0px))]&amp;#xA;button-secondary&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;items-center justify-center&amp;#xA;button inline-flex ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Select a new image' /&gt;" Guid="c0067b83-436a-440c-86c1-40f9f6d1bc83" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click 'Edit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="mPDrwOlY3Eew3kBOfKsfPA" DesignTimeRectangle="234, 505, 422, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="4cd73244-e5e0-47ac-9a8a-ce866576be22" InformativeScreenshot="4ad5c5b473f443b049af3313c9820daf.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/nO9u11kWI0aiLotw5WqKkw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Edit(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Text="[path]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="8XuOGTuMwUqEiuGhU62B8g" DesignTimeRectangle="234, 505, 422, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="6df57bd1-830b-4147-b146-4a6a0c2bf6a3" InformativeScreenshot="4ad5c5b473f443b049af3313c9820daf.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/wrrB6HhgHUeX9mj32aWhhw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="ctr5bzIE6Uq8w3LmorGo0g" DesignTimeRectangle="695, 537, 110, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" Guid="0638905e-3cb9-4ac5-b904-1c1e2bb35fe3" InformativeScreenshot="a653c0889bd3c4e9a9ee6cd3da1a833f.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/tuzezDDuE0u1f0Xyx6vVPw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="1" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="4lmqkONjHkOs-NSH7zRXfQ" DesignTimeRectangle="1248, 710, 36, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='profile-avatar-upload-modal-rpl-modal-card' tag='SPAN' type='' class='flex items-center gap-xs' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Save' /&gt;" Guid="0ba7b6e8-91f6-4efb-b27e-ab683c4e6c81" InformativeScreenshot="231c14e3f2ef611cbf462b79a6d50a3e.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/eDT1OLI-TEiOJv2hw7ethg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="1233, 709, 66, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='   Save   ' parentid='profile-avatar-upload-modal-rpl-modal-card' tag='BUTTON' type='' class='&amp;#xA;button-medium px-[calc(var(--rem12)-var(--button-border-width,0px))]&amp;#xA;button-primary&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;items-center justify-center&amp;#xA;button inline-flex ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Save' /&gt;" Guid="7429fba4-e8eb-4371-800b-bd5cb1162ba3" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" ContentHash="eMvR2JKe-02FEHqdstziHw" IconBase64="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" InformativeScreenshot="9bc921f2d1b841243ac78d60ca7e488e.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/9OseqQOa6k-dMJsjFhQoDQ" Selector="&lt;html app='msedge.exe' title='Reddit - The heart of the internet' /&gt;" Url="https://www.reddit.com/" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

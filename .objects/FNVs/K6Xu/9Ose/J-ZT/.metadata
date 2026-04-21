@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Select a new image",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "J-ZTxf3yXUKGPS-Rg64R2w",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/J-ZTxf3yXUKGPS-Rg64R2w",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/9OseqQOa6k-dMJsjFhQoDQ",
+  "Created": "2026-04-20T23:50:06.1423234Z",
+  "Updated": "2026-04-20T23:50:06.1423234Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
