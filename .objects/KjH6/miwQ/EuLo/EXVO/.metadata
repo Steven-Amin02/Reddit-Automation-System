@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Select Community",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "EXVOtp0wg0eyPy4tQdEZ2g",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/EXVOtp0wg0eyPy4tQdEZ2g",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/EuLoxCykR0-UYSwFDv6vEw",
+  "Created": "2026-04-21T15:10:41.0430819Z",
+  "Updated": "2026-04-21T15:10:41.0430819Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="x_wuyiCgr06dQmlqrKyv_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/r/learnprogramming/submit" DesignTimeRectangle="481, 638, 873, 140" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Post body text field' aria-role='textbox' tag='DIV' /&gt;" Guid="291b4cf4-37b3-4887-ad1a-d43ba14b523d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to r/learnprogramming' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="807a68e2776419b1b6adf42fbd8ba8e7.jpg" xmlns="">05KNDksKD9kS7x8mFkpYv1w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

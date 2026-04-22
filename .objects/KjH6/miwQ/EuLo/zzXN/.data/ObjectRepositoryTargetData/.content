@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="otY2T19oukOQMPxGy9dPFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/r/learnprogramming/submit" DesignTimeRectangle="1291, 784, 64, 50" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit-post-button' tag='R-POST-FORM-SUBMIT-BUTTON' /&gt;" Guid="2001e5b0-f430-4b88-9558-a0a2fc48ef78" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to r/learnprogramming' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1308c33b455ba02091903e588f3747e4.jpg" xmlns="">0Qvvn6Wba2UOT9rVVJbzOTg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

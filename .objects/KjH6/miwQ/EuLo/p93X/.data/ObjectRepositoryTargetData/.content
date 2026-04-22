@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wTqRmSI21kOBv39pubgjeA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/submit" DesignTimeRectangle="589, 382, 711, 82" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;shreddit-app&amp;gt;div&amp;gt;rpl-modal-card&amp;gt;div&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;span' parentid='post-submit-community-picker-dialog' tag='SPAN' /&gt;" Guid="5f8e8a56-0b93-4438-8410-25c3fc8da058" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="96948d98cf40009de3bbb30a7f4a2765.jpg" xmlns="">0QUljZCMBbEuV-zAdhA6S1w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

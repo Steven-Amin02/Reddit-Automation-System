@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pasnAiw9dU2KGLylsMv5MA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/submit" DesignTimeRectangle="641, 320, 701, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='FACEPLATE-SEARCH-INPUT' /&gt;&lt;webctrl shadowhostid='' tag='INPUT' /&gt;" Guid="cbd55cf8-8a1e-4824-862f-fc32a3643089" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d379225b7358a36a9331bcd30d2235cb.jpg" xmlns="">027bmgtdbCUC1VqKmYhirPA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Submit to Reddit",
+  "Type": "Screen",
+  "Id": "EuLoxCykR0-UYSwFDv6vEw",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/EuLoxCykR0-UYSwFDv6vEw",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/miwQlEw37E2mk5xqoXX-TQ",
+  "Created": "2026-04-21T15:07:05.038088Z",
+  "Updated": "2026-04-21T15:07:05.038088Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

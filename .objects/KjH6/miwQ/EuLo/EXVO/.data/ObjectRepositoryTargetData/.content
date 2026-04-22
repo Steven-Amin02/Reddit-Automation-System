@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="75SFUQ7TfEeixA5PTWcNJQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/submit" DesignTimeRectangle="502, 265, 144, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='COMMUNITY-PICKER' /&gt;&lt;webctrl aaname='Select Community               ' shadowhostid='' tag='SPAN' type='' class='flex items-center gap-xs' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Select Community' /&gt;" Guid="39556cf4-121b-4ef2-8bcc-fc9bdf4bfcdc" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to Reddit' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="479, 264, 210, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='COMMUNITY-PICKER' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' type='button' class='&amp;#xA;button-medium px-[calc(var(--rem12)-var(--button-border-width,0px))]&amp;#xA;button-bordered&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;items-center justify-center&amp;#xA;button inline-flex ' aaname='   Select Community                    ' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Select Community' /&gt;" Guid="89d3a3fa-64f6-453f-be01-7d32a372da91" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7438a10deac19c98cecba452d02845f3.jpg" xmlns="">0Ogz3IUtAjkej3TlldaYgmQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

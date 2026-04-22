@@ -1,0 +1,14 @@
+﻿{
+  "Name": "TEXTAREA innerTextArea",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "QngQxzqhcUGtpS4GDC6xqQ",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/QngQxzqhcUGtpS4GDC6xqQ",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/EuLoxCykR0-UYSwFDv6vEw",
+  "Created": "2026-04-21T15:08:12.4054177Z",
+  "Updated": "2026-04-21T15:08:12.4054177Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
