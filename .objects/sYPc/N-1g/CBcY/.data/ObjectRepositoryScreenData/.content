@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="4LdLMvAV40yRl6kh531RDg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/wDEU-3B-Xk6UaEAjgcA36g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="q0V5rKksV0WlYJ3x32FUgg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG/SURBVFhHxZZtscIwEEUroRKQUAmVgANwAA5aB+CAOkACEpBQCUjom5uZzWz2bkLKj7zMnBl6Sj66203adV23/TMkWkOiNSRak4rn87nl2vF4tJ2/8n6/v/VNRd/327qu2+fz2eZ5juAaHA4HO0CW2+0WJkd/e09BYhvHMXS8Xq/Rnc/n4F6vF/3fY5qmmskBicD9fg8DDMMQ3bIstDCPy+US/od02nsOJAKSCoDf2pVSgQWj6X5fIBGRVCCX1nmpwKJk0bkFOpBIkFRgYut0KmTyUnQykEhAGFFKNhVwMplc24VWQoKQvOqXCg4LwMSPx4MisgMSLhjcTiIOraLccpDIghfP5hjux9ALJLJgYixAV4C4HWVnIVGklApdrjsgUUSeGE3vknKI/ZAKEll0udmweztnJSSyyFMi5F7YvZ2zAhIu3unmhV12ycL5byFByOQYXHsv7PrAqkwFiQQ8CRpyb+8BCTt2Q3Gyc3oHlgOJiK7x0gEjYT+dTtF55ZqBRGDP0Zr7TvB2TgcScUA0XeslvO8Eb+d0IJGUm71XQlKB90E+ZmXfKIyVCq/catGRs62QChKtIdEaEq0h0ZQ/TO2joFKO2LsAAAAASUVORK5CYII=" Reference="rFJNhj-xFkqKSjF2Z04Ujg/wDEU-3B-Xk6UaEAjgcA36g" Selector="&lt;html app='chrome.exe' title='X. It’s what’s happening / X' /&gt;" Url="https://x.com/" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="bef6c050786748d4ea06495885169d6b.jpg" xmlns="">bef6c050786748d4ea06495885169d6b.jpg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "@UProject0234206",
+  "Type": "Element",
+  "Id": "IbKzlDiFCUyvKUdyrGUm5w",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/IbKzlDiFCUyvKUdyrGUm5w",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/CBcYzWURDkaqCeslU0AaOw",
+  "Created": "2026-04-23T20:24:15.2804638Z",
+  "Updated": "2026-04-23T20:24:15.2804638Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

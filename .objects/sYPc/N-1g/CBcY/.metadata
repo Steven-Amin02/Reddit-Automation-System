@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome X. It’s what’s happening  X",
+  "Type": "Screen",
+  "Id": "CBcYzWURDkaqCeslU0AaOw",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/CBcYzWURDkaqCeslU0AaOw",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/N-1gGoGgyEqwD3hyubzeoQ",
+  "Created": "2026-04-23T20:21:29.883413Z",
+  "Updated": "2026-04-23T20:21:29.883413Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

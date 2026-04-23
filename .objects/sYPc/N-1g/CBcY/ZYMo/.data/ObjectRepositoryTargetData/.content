@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="loNK9LmF_UuUIsukGGou7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="x.com/home" DesignTimeRectangle="179, 828, 291, 65" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Post' tag='A' /&gt;" Guid="fd43357c-4a90-45b8-b6f0-1709002a3d9d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Home / X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="86bcff6d17bd6cfcb115d1a987835e4d.jpg" xmlns="">0IMQkPMHPakeun6sLFk3Ayw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

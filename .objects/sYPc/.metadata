@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome X. It’s what’s happening  X",
+  "Type": "App",
+  "Id": "sYPcURS6mES3ECLJIum65Q",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/sYPcURS6mES3ECLJIum65Q",
+  "Created": "2026-04-23T20:21:29.8412627Z",
+  "Updated": "2026-04-23T20:21:29.8412627Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

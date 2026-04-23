@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6uLmE_9kS0yGBexffEHHjg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="x.com/UProject0234206" DesignTimeRectangle="534, 571, 204, 25" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='css-175oi2r r-1awozwy r-18u37iz r-1wbh5a2' parentid='react-root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e409284e-23f7-4823-a560-30e25a80a5b8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) uiPathProject02 (@UProject0234206) / X' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="179, 828, 291, 65" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-label='Post' tag='A' type='' class='css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-19yznuf r-64el8z r-1fkl15p r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21' aaname='Post' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Post' /&gt;" Guid="f989ed5a-6dcd-408b-97e8-6f8a8786c51d" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8a80ea0295d2d297686a45e6a899ce8f.jpg" xmlns="">0Nzj0IqW7eUGpAnoKlXAhNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
