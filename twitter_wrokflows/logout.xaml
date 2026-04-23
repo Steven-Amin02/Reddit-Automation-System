@@ -97,7 +97,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="x.com/home" DesignTimeRectangle="153, 849, 375, 55" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' tag='A' type='' class='css-175oi2r r-18u37iz r-1mmae3n r-3pj75a r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="a4664d61-c550-4dd7-90c6-35b4c7e6dfc0" InformativeScreenshot="eab8b83fa78a09dbbb0429ab81ec2ae3.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Home / X' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="153, 794, 375, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' tag='A' type='' class='css-175oi2r r-18u37iz r-1mmae3n r-3pj75a r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21' aaname='Add an existing account' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Add an existing account' /&gt;" Guid="75691a9a-3e0a-405c-b8c7-6c44731079d9" SearchSteps="FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -131,14 +131,7 @@
         </ActivityFunc>
       </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="ImHWHRcN-kCf7Vvaw_qfug" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIKSURBVFhHxZa/TgJBEIevMNZ0xOrOaGwwSm8hj8AbwCPwBvAG8AbQaUdpSWGseQNpsKbRes3vwlzm5je7Hpqcm3wJfCw7ezP757Isy8I/Q6JtSLQNiT+Tn52Hl4ursM974fPyLjx3i9LZfkfqYr1eh1gbDof2zwQCSWDNR96LTaIuOp1O2O124XA4hNlsVoHvoCgKO0CNp25BwQVkxfanCYDBYFA+8WQyqdx4PC7dZrOh/hob1GbB9ncnABaLRRmw3+9XbrVa0cQsCGIDa2z/6ASkFACftUuVAmm2QQUsRts/OgEgpZjP5+S8UmBS769v4ev+gYLv89tmi9AipUBg63QpEFyy83h9Uz6tBEZWIsEBiRpI+3a7pVLASSnku51oQ0gQWIhoOCO0wwQQeLlcUkZOgIQLBrdBxKHhrLD/aQiJKFh4dgfA/TL1AokoCIwJ6B0gTq+REyGRJFUKvV1PgEQSeWI0fUrKJfaLUpCIorebTbt3cjaERBR5SqTcS7t3cjaAhMt0Oi0H19vNS7uckk3eHY6QICQ4BtfeS7u+sBqWgkQNPAkaam9/A5J2nIbi5OT0LiwHEhV6j8euXyBpH41GlfO2awQSJXK7/RQcxN4TvJPTgUQ1IJre6ym89wTv5HQgUdtu9rcUUgqsB3mZlXMjMVZdeNutKTpztiVKQaJtSLQNibYh0SrfMS/AtU/Vco8AAAAASUVORK5CYII=" InformativeScreenshot="a282e018b861a77461f1544ba911d617.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/XPm7agnIc0ey_c8zs6HNcQ" Selector="&lt;html app='chrome.exe' title='(1) Home / X' /&gt;" Url="https://x.com/home" Version="V2">
-          <uix:TargetApp.Arguments>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.Arguments>
-          <uix:TargetApp.WorkingDirectory>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.WorkingDirectory>
-        </uix:TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="kORXA-2k5kewJ4JUENiQmg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIKSURBVFhHxZa/TgJBEIevMNZ0xOrOaGwwSm8hj8AbwCPwBvAG8AbQaUdpSWGseQNpsKbRes3vwlzm5je7Hpqcm3wJfCw7ezP757Isy8I/Q6JtSLQNiT+Tn52Hl4ursM974fPyLjx3i9LZfkfqYr1eh1gbDof2zwQCSWDNR96LTaIuOp1O2O124XA4hNlsVoHvoCgKO0CNp25BwQVkxfanCYDBYFA+8WQyqdx4PC7dZrOh/hob1GbB9ncnABaLRRmw3+9XbrVa0cQsCGIDa2z/6ASkFACftUuVAmm2QQUsRts/OgEgpZjP5+S8UmBS769v4ev+gYLv89tmi9AipUBg63QpEFyy83h9Uz6tBEZWIsEBiRpI+3a7pVLASSnku51oQ0gQWIhoOCO0wwQQeLlcUkZOgIQLBrdBxKHhrLD/aQiJKFh4dgfA/TL1AokoCIwJ6B0gTq+REyGRJFUKvV1PgEQSeWI0fUrKJfaLUpCIorebTbt3cjaERBR5SqTcS7t3cjaAhMt0Oi0H19vNS7uckk3eHY6QICQ4BtfeS7u+sBqWgkQNPAkaam9/A5J2nIbi5OT0LiwHEhV6j8euXyBpH41GlfO2awQSJXK7/RQcxN4TvJPTgUQ1IJre6ym89wTv5HQgUdtu9rcUUgqsB3mZlXMjMVZdeNutKTpztiVKQaJtSLQNibYh0SrfMS/AtU/Vco8AAAAASUVORK5CYII=" InformativeScreenshot="96e14e76f72a6cfccd639a8f60696a8a.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/r99OudEbykCBlTwsT7J3jg" Selector="&lt;html app='chrome.exe' title='(5) Home / X' /&gt;" Url="https://x.com/home" Version="V2" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

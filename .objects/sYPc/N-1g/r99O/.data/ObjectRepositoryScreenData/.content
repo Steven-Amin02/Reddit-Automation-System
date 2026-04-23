@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="kORXA-2k5kewJ4JUENiQmg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIKSURBVFhHxZa/TgJBEIevMNZ0xOrOaGwwSm8hj8AbwCPwBvAG8AbQaUdpSWGseQNpsKbRes3vwlzm5je7Hpqcm3wJfCw7ezP757Isy8I/Q6JtSLQNiT+Tn52Hl4ursM974fPyLjx3i9LZfkfqYr1eh1gbDof2zwQCSWDNR96LTaIuOp1O2O124XA4hNlsVoHvoCgKO0CNp25BwQVkxfanCYDBYFA+8WQyqdx4PC7dZrOh/hob1GbB9ncnABaLRRmw3+9XbrVa0cQsCGIDa2z/6ASkFACftUuVAmm2QQUsRts/OgEgpZjP5+S8UmBS769v4ev+gYLv89tmi9AipUBg63QpEFyy83h9Uz6tBEZWIsEBiRpI+3a7pVLASSnku51oQ0gQWIhoOCO0wwQQeLlcUkZOgIQLBrdBxKHhrLD/aQiJKFh4dgfA/TL1AokoCIwJ6B0gTq+REyGRJFUKvV1PgEQSeWI0fUrKJfaLUpCIorebTbt3cjaERBR5SqTcS7t3cjaAhMt0Oi0H19vNS7uckk3eHY6QICQ4BtfeS7u+sBqWgkQNPAkaam9/A5J2nIbi5OT0LiwHEhV6j8euXyBpH41GlfO2awQSJXK7/RQcxN4TvJPTgUQ1IJre6ym89wTv5HQgUdtu9rcUUgqsB3mZlXMjMVZdeNutKTpztiVKQaJtSLQNibYh0SrfMS/AtU/Vco8AAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='(5) Home / X' /&gt;" Url="https://x.com/home" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="96e14e76f72a6cfccd639a8f60696a8a.jpg" xmlns="">0Joji-A6GEU2FJ0p5X5Cjow</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

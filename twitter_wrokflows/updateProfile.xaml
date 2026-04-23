@@ -79,13 +79,13 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="updateProfile" sap:VirtualizedContainerService.HintSize="898.8000000000001,1675.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="updateProfile" sap:VirtualizedContainerService.HintSize="897.2,1675.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome (1) Home  X(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1652" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="e313def0-c14d-4a27-b356-d43a6254d894" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome (1) Home  X(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1652" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="e313def0-c14d-4a27-b356-d43a6254d894" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -165,7 +165,7 @@
         </ActivityFunc>
       </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="cGCKwdj8XU6hK0Ou-SYBMg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIKSURBVFhHxZa/TgJBEIevMNZ0xOrOaGwwSm8hj8AbwCPwBvAG8AbQaUdpSWGseQNpsKbRes3vwlzm5je7Hpqcm3wJfCw7ezP757Isy8I/Q6JtSLQNiT+Tn52Hl4ursM974fPyLjx3i9LZfkfqYr1eh1gbDof2zwQCSWDNR96LTaIuOp1O2O124XA4hNlsVoHvoCgKO0CNp25BwQVkxfanCYDBYFA+8WQyqdx4PC7dZrOh/hob1GbB9ncnABaLRRmw3+9XbrVa0cQsCGIDa2z/6ASkFACftUuVAmm2QQUsRts/OgEgpZjP5+S8UmBS769v4ev+gYLv89tmi9AipUBg63QpEFyy83h9Uz6tBEZWIsEBiRpI+3a7pVLASSnku51oQ0gQWIhoOCO0wwQQeLlcUkZOgIQLBrdBxKHhrLD/aQiJKFh4dgfA/TL1AokoCIwJ6B0gTq+REyGRJFUKvV1PgEQSeWI0fUrKJfaLUpCIorebTbt3cjaERBR5SqTcS7t3cjaAhMt0Oi0H19vNS7uckk3eHY6QICQ4BtfeS7u+sBqWgkQNPAkaam9/A5J2nIbi5OT0LiwHEhV6j8euXyBpH41GlfO2awQSJXK7/RQcxN4TvJPTgUQ1IJre6ym89wTv5HQgUdtu9rcUUgqsB3mZlXMjMVZdeNutKTpztiVKQaJtSLQNibYh0SrfMS/AtU/Vco8AAAAASUVORK5CYII=" InformativeScreenshot="6017dab04c1dc8b5e2df12aabfcf4044.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/VtnNNno4RUG4Wmzd-sbuGA" Selector="&lt;html app='chrome.exe' title='(1) Home / X' /&gt;" Url="https://x.com/home" Version="V2">
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="lNciSEK4HUKsNgcaIBxmXQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIKSURBVFhHxZa/TgJBEIevMNZ0xOrOaGwwSm8hj8AbwCPwBvAG8AbQaUdpSWGseQNpsKbRes3vwlzm5je7Hpqcm3wJfCw7ezP757Isy8I/Q6JtSLQNiT+Tn52Hl4ursM974fPyLjx3i9LZfkfqYr1eh1gbDof2zwQCSWDNR96LTaIuOp1O2O124XA4hNlsVoHvoCgKO0CNp25BwQVkxfanCYDBYFA+8WQyqdx4PC7dZrOh/hob1GbB9ncnABaLRRmw3+9XbrVa0cQsCGIDa2z/6ASkFACftUuVAmm2QQUsRts/OgEgpZjP5+S8UmBS769v4ev+gYLv89tmi9AipUBg63QpEFyy83h9Uz6tBEZWIsEBiRpI+3a7pVLASSnku51oQ0gQWIhoOCO0wwQQeLlcUkZOgIQLBrdBxKHhrLD/aQiJKFh4dgfA/TL1AokoCIwJ6B0gTq+REyGRJFUKvV1PgEQSeWI0fUrKJfaLUpCIorebTbt3cjaERBR5SqTcS7t3cjaAhMt0Oi0H19vNS7uckk3eHY6QICQ4BtfeS7u+sBqWgkQNPAkaam9/A5J2nIbi5OT0LiwHEhV6j8euXyBpH41GlfO2awQSJXK7/RQcxN4TvJPTgUQ1IJre6ym89wTv5HQgUdtu9rcUUgqsB3mZlXMjMVZdeNutKTpztiVKQaJtSLQNibYh0SrfMS/AtU/Vco8AAAAASUVORK5CYII=" InformativeScreenshot="04d14d08bc0accf2b8353f860ca99db5.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/Ja-LA978mUaD5ewWOk47Yg" Selector="&lt;html app='chrome.exe' title='(5) Home / X' /&gt;" Url="https://x.com/home" Version="V2">
           <uix:TargetApp.Arguments>
             <InArgument x:TypeArguments="x:String" />
           </uix:TargetApp.Arguments>
