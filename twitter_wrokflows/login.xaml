@@ -96,27 +96,27 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="login" sap:VirtualizedContainerService.HintSize="898.8000000000001,4755.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="login" sap:VirtualizedContainerService.HintSize="898.8000000000001,7405.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome X. It’s what’s happening  X" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,4732" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome X. It’s what’s happening  X" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556.8,7382.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,4538.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,7188.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Post'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,4478.4" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Post'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="521.6,7128.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,1440.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="520,4091.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="currentUser_twitter" />
                   </Sequence.Variables>
@@ -125,12 +125,12 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Profile'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Profile'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="x.com/home" ContentHash="z2lY0F50IkGAwdYa_5do5A" DesignTimeRectangle="179, 692, 182, 63" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;a&amp;gt;div' idx='9' parentid='react-root' tag='DIV' /&gt;" Guid="155df98a-3af1-490c-a89c-c5c564f2487f" InformativeScreenshot="a7b1915d0fe74cdae47f60e104704b09.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/HGqTiY3En06eSvJ3Ya7a7g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Home / X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NGetText DisplayName="Get Text '@UProject0234206'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" TextString="[currentUser_twitter]" Version="V5">
+                  <uix:NGetText DisplayName="Get Text '@UProject0234206'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" TextString="[currentUser_twitter]" Version="V5">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="x.com/UProject0234206" ContentHash="6uLmE_9kS0yGBexffEHHjg" DesignTimeRectangle="534, 571, 204, 25" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='css-175oi2r r-1awozwy r-18u37iz r-1wbh5a2' parentid='react-root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e409284e-23f7-4823-a560-30e25a80a5b8" InformativeScreenshot="8a80ea0295d2d297686a45e6a899ce8f.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/IbKzlDiFCUyvKUdyrGUm5w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) uiPathProject02 (@UProject0234206) / X' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                         <uix:TargetAnchorable.Anchors>
@@ -141,9 +141,9 @@
                       </uix:TargetAnchorable>
                     </uix:NGetText.Target>
                   </uix:NGetText>
-                  <If Condition="[currentUser_twitter = &quot;@uiPathProject00&quot;]" sap:VirtualizedContainerService.HintSize="451.2,1044.8" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[currentUser_twitter = &quot;@uiPathProject00&quot;]" sap:VirtualizedContainerService.HintSize="486.4,3695.2" sap2010:WorkflowViewState.IdRef="If_1">
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -152,18 +152,18 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,825.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484.8,3476" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'uiPathProject@uiPathPro…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'uiPathProject@uiPathPro…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="x.com/home" ContentHash="nplbTMu_mkSZu2rlb-KQeA" DesignTimeRectangle="179, 932, 324, 82" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Account menu' tag='BUTTON' /&gt;" Guid="c00032d0-52d4-4910-91d2-c7ec932fd5bc" InformativeScreenshot="30442eda3d1433a1f74b60877112a603.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/NE7ME5AlDkqMZ9SWF8ChEw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Home / X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log out @UProject0234206'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log out @UProject0234206'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="x.com/home" DesignTimeRectangle="153, 849, 375, 55" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='menuitem' tag='A' type='' class='css-175oi2r r-18u37iz r-1mmae3n r-3pj75a r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="a4664d61-c550-4dd7-90c6-35b4c7e6dfc0" InformativeScreenshot="eab8b83fa78a09dbbb0429ab81ec2ae3.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Home / X' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -174,7 +174,7 @@
                             </uix:TargetAnchorable>
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log out'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log out'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="x.com/logout" ContentHash="1vfcCsOxUkqVbKZrAUNi1Q" DesignTimeRectangle="809, 631, 320, 55" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Log out' tag='BUTTON' type='button' class='css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-16y2uox r-6gpygo r-1udh08x r-1udbk01 r-3s2u2q r-peo1c r-1ps3wis r-cxgwc0 r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Log out' /&gt;" Guid="469bc575-d58d-4a0a-8dc5-4f558ce59934" InformativeScreenshot="de9838fca2716bfed72a8e6fe53942e1.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/V98rl1JT90u97qRaZCcycg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) X' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -185,18 +185,110 @@
                             </uix:TargetAnchorable>
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="x.com" DesignTimeRectangle="1872, 9, 58, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='X. It’s what’s happening / X - Google Chrome' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" Guid="25ab33b0-f2d4-413c-8cc5-f9d31fbf5994" InformativeScreenshot="4d773ff27141bfe8e139e6aa69263912.jpg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='X. It’s what’s happening / X - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="x.com" ContentHash="68iek8134kaFZBRPqFtusQ" DesignTimeRectangle="1099, 862, 375, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Sign in' tag='A' /&gt;" Guid="289c1b02-5f70-4a5a-a983-1ecd08e72d63" InformativeScreenshot="efa39c52ba813c85d30b890c2f5f39ba.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/TeAtGBf5bUqEM3xG7QYJLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='X. It’s what’s happening / X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Phone, email, or userna…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="SameAsCard" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Text="uiPathProject00@gmail.com" Version="V5">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="x.com/i/flow/login" ContentHash="H8b0Bv8EXUKzmh_q3YH-Tg" DesignTimeRectangle="782, 529, 373, 70" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div' parentid='layers' tag='DIV' /&gt;" Guid="3fc707ab-f333-4baf-86b3-420e51180a71" InformativeScreenshot="39e56712fc056e3e1fc1befb130384ae.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/tmS0TcqmO0mpve6pxBu7zg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,256.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_13" InteractionMode="HardwareEvents" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
+                        <uix:NCheckState DisplayName="Check App State 'Phone or username'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,1945.6" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Version="V5">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,1056" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Phone or username(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="SameAsCard" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Text="uipathProject00" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="x.com/i/flow/login" ContentHash="gP5iHHFxvkybYZU8_GUhCw" DesignTimeRectangle="695, 474, 548, 70" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div' parentid='layers' tag='DIV' /&gt;" Guid="e462a533-f4df-4a98-b61b-3aace3d34b0d" InformativeScreenshot="ff7c08b43d23d3d1bb00be54c8321348.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/0RHaw47GJU-nZcjBryeVlQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,256.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_15" InteractionMode="HardwareEvents" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_16" InteractionMode="SameAsCard" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Text="uuuiii000" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="x.com/i/flow/login" ContentHash="R9QAeXHzA0ylgwBt5lvebg" DesignTimeRectangle="694, 450, 550, 72" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' tag='LABEL' /&gt;" Guid="9c0d9072-98e0-45e7-b857-35acedf62a88" InformativeScreenshot="4d4a1d66dc876efc1b47befd0d2166f8.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/tHB2JkEIEEiWNQd6kMst_g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_16" InteractionMode="HardwareEvents" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,553.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_17" InteractionMode="SameAsCard" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Text="uuuiii000" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="x.com/i/flow/login" ContentHash="R9QAeXHzA0ylgwBt5lvebg" DesignTimeRectangle="694, 450, 550, 72" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' tag='LABEL' /&gt;" Guid="9c0d9072-98e0-45e7-b857-35acedf62a88" InformativeScreenshot="4d4a1d66dc876efc1b47befd0d2166f8.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/tHB2JkEIEEiWNQd6kMst_g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_17" InteractionMode="HardwareEvents" ScopeIdentifier="1ae66609-965f-4c65-9f0b-034f1a2c226b" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="x.com/i/flow/login" ContentHash="--T9dZPplk6iJdSW0HgfPw" DesignTimeRectangle="695, 474, 548, 70" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div' parentid='layers' tag='DIV' /&gt;" Guid="550cea18-877e-4aba-b17b-817a0487ab32" InformativeScreenshot="c29b945325cf92d72315ae871cd0dcc3.jpg" Reference="rFJNhj-xFkqKSjF2Z04Ujg/HmeXkdK7eUKG45QD14lziA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='X' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
                       </Sequence>
                     </If.Else>
                   </If>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="484.8,2701.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="520,2701.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
