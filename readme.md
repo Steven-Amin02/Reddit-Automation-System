@@ -47,7 +47,7 @@ The Dispatcher expects an Excel file (`SocialMediaPosts.xlsx`) with the followin
 
 | Platforms | Emails | Passwords | Usernames | ... |
 | :--- | :--- | :--- | :--- | :--- |
-| Twitter, LinkedIn | user1@mail.com, user2@mail.com | pass1, pass2 | usr_1, usr_2 | ... |
+| Twitter, Reddit | user1@mail.com, user2@mail.com | pass1, pass2 | usr_1, usr_2 | ... |
 
 ---
 
