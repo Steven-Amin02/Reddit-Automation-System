@@ -46,7 +46,7 @@ To deploy this project to the cloud, the following Orchestrator components are r
 The Dispatcher expects an Excel file (`SocialMediaPosts.xlsx`) with the following column structure. The bot is capable of reading comma-separated values to generate cloned transactions for cross-platform posting.
 
 | Platforms | Emails | Passwords | Usernames | ... |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | Twitter, LinkedIn | user1@mail.com, user2@mail.com | pass1, pass2 | usr_1, usr_2 | ... |
 
 ---
