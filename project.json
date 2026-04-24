@@ -2,8 +2,9 @@
   "name": "Reddit-Automation",
   "projectId": "5d3f5dc2-60f7-4f7d-8556-eddbd8aef1ad",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "ProfileSync_Dispatcher.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "[3.3.1]",
     "UiPath.System.Activities": "[26.2.4]",
     "UiPath.UIAutomation.Activities": "[25.10.30]"
   },
@@ -11,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.191.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.6",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -45,8 +46,20 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "170fea1e-da9b-4b45-9c24-22dbb73f065e",
+      "filePath": "ProfileSync_Dispatcher.xaml",
+      "uniqueId": "a72078b7-b459-4490-b047-a5651ff08881",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Performers\\ProfileSync_PostingPerformer.xaml",
+      "uniqueId": "630fb4fb-427c-428d-8fef-709b89842754",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Performers\\ProfileSync_ProfilePicPerformer.xaml",
+      "uniqueId": "63b9d932-2ff1-4a81-8611-173d37ed5718",
       "input": [],
       "output": []
     }

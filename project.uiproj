@@ -2,5 +2,5 @@
   "Name": "Reddit-Automation",
   "ProjectType": "Process",
   "Description": "Blank Process",
-  "MainFile": "Main.xaml"
+  "MainFile": "ProfileSync_Dispatcher.xaml"
 }

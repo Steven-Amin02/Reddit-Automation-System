@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="swLYnkAgb0eokVmolIvcww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="Da0nF-rFdEqEHYN7THU9Tg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/user/Steven_Amin" DesignTimeRectangle="569, 324, 20, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='profile-header-main' tag='svg' /&gt;" Guid="a2ae7b74-6eaa-4204-90d3-e731e58ead88" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="91b8e7e438acd63a1434ca838340ef4b.jpg" xmlns="">0-wTT-SjltUS4BIT9SR19jw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/user/Grand_Win_9630" DesignTimeRectangle="539, 348, 48, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Edit profile avatar' tag='BUTTON' /&gt;" Guid="8a5b1dfc-e41e-464d-a23c-b9d93ba332f6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Grand_Win_9630 (u/Grand_Win_9630) - Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c1caee1ef5bf7c0bc84c2a0c44b717be.jpg" xmlns="">0HB661c2njEOVzsXXLQa1PA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

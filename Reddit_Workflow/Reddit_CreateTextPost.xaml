@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CreateTextPost" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="CreateTextPost_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CreateTextPost" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Content" Type="InArgument(x:String)" />
+    <x:Property Name="in_Title" Type="InArgument(x:String)" />
+    <x:Property Name="in_SubReddit" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>CreateTextPost_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -89,47 +98,36 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CreateTextPost" sap:VirtualizedContainerService.HintSize="897.2,1913.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CreateTextPost" sap:VirtualizedContainerService.HintSize="1281,1953" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="484.8,1890.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="x:String" Name="in_Body">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:String">Hello UIPATH</Literal>
-          </Variable.Default>
-        </Variable>
-        <Variable x:TypeArguments="x:String" Name="in_Title">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:String">title</Literal>
-          </Variable.Default>
-        </Variable>
-        <Variable x:TypeArguments="x:String" Default="learnprogramming" Name="in_Subreddit" />
-      </Sequence.Variables>
+    <Sequence sap:VirtualizedContainerService.HintSize="486,1930" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Submit to Reddit" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1807.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Submit to Reddit" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1847" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1613.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1653" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGoToUrl DisplayName="Go To URL - reddit.com" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Url="https://www.reddit.com/submit?type=TEXT" Version="V5" />
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Select Community'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V5">
+              <uix:NGoToUrl DisplayName="Go To URL - reddit.com" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Url="https://www.reddit.com/submit?type=TEXT" Version="V5" />
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Select Community'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="reddit.com/submit" ContentHash="75SFUQ7TfEeixA5PTWcNJQ" DesignTimeRectangle="502, 265, 144, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='COMMUNITY-PICKER' /&gt;&lt;webctrl aaname='Select Community               ' shadowhostid='' tag='SPAN' type='' class='flex items-center gap-xs' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Select Community' /&gt;" Guid="39556cf4-121b-4ef2-8bcc-fc9bdf4bfcdc" InformativeScreenshot="7438a10deac19c98cecba452d02845f3.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/EXVOtp0wg0eyPy4tQdEZ2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to Reddit' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -140,7 +138,7 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Text="[in_Subreddit]" Version="V5">
+              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Text="[in_SubReddit]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="reddit.com/submit" ContentHash="pasnAiw9dU2KGLylsMv5MA" DesignTimeRectangle="641, 320, 701, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='FACEPLATE-SEARCH-INPUT' /&gt;&lt;webctrl shadowhostid='' tag='INPUT' /&gt;" Guid="cbd55cf8-8a1e-4824-862f-fc32a3643089" InformativeScreenshot="d379225b7358a36a9331bcd30d2235cb.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/_hIxPjIoYEqaDctqBFgt7A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
@@ -155,13 +153,13 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayAfter="1" DelayBefore="1" DisplayName="Click 'rlearnprogramming 4,34…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V5">
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayAfter="1" DelayBefore="1" DisplayName="Click 'rlearnprogramming 4,34…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="reddit.com/submit" ContentHash="wTqRmSI21kOBv39pubgjeA" DesignTimeRectangle="589, 382, 711, 82" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;shreddit-app&amp;gt;div&amp;gt;rpl-modal-card&amp;gt;div&amp;gt;li&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;span' parentid='post-submit-community-picker-dialog' tag='SPAN' /&gt;" Guid="5f8e8a56-0b93-4438-8410-25c3fc8da058" InformativeScreenshot="96948d98cf40009de3bbb30a7f4a2765.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/p93Xr6C2KkWEalQp9M3mdA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TEXTAREA innerTextArea'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Text="[in_Title]" Version="V5">
+              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TEXTAREA innerTextArea'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Text="[in_Title]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="reddit.com/submit" ContentHash="A7EYVvYZz0-xGxMlufZ56Q" DesignTimeRectangle="501, 438, 833, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='FACEPLATE-TEXTAREA-INPUT' /&gt;&lt;webctrl id='innerTextArea' shadowhostid='' tag='TEXTAREA' /&gt;" Guid="a62c8ab9-d288-4e19-90c6-b142545dbdb4" InformativeScreenshot="a264ca20e28c96bf2e8d9b2389ffa3ea.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/QngQxzqhcUGtpS4GDC6xqQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
@@ -176,7 +174,7 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Text="[in_Body]" Version="V5">
+              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Text="[in_Content]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="reddit.com/r/learnprogramming/submit" ContentHash="x_wuyiCgr06dQmlqrKyv_w" DesignTimeRectangle="481, 638, 873, 140" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Post body text field' aria-role='textbox' tag='DIV' /&gt;" Guid="291b4cf4-37b3-4887-ad1a-d43ba14b523d" InformativeScreenshot="807a68e2776419b1b6adf42fbd8ba8e7.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/z11Ez4xKck6uEZVOcyA2BQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to r/learnprogramming' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
@@ -191,7 +189,7 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayAfter="1" DelayBefore="1" DisplayName="Click 'R-POST-FORM-SUBMIT-BUTT…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V5">
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayAfter="1" DelayBefore="1" DisplayName="Click 'R-POST-FORM-SUBMIT-BUTT…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="reddit.com/r/learnprogramming/submit" ContentHash="otY2T19oukOQMPxGy9dPFQ" DesignTimeRectangle="1291, 784, 64, 50" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit-post-button' tag='R-POST-FORM-SUBMIT-BUTTON' /&gt;" Guid="2001e5b0-f430-4b88-9558-a0a2fc48ef78" InformativeScreenshot="1308c33b455ba02091903e588f3747e4.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/zzXNvhDor0OMZmhoGXdBJA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to r/learnprogramming' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>

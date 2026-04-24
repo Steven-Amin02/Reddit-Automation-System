@@ -1,4 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="UpdateProfilePicture" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="UpdateProfilePicture_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="UpdateProfilePicture" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_ProfilePicPath" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>UpdateProfilePicture_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -37,6 +44,7 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -79,59 +87,57 @@
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UpdateProfilePicture" sap:VirtualizedContainerService.HintSize="1213.2,2035.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="UpdateProfilePicture" sap:VirtualizedContainerService.HintSize="1281,2074" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="518.4,2012" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="520,2051" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap:VirtualizedContainerService.HintSize="484.8,1928.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="x:String" Default="D:\Steven Amin\edited.jpg" Name="path" />
-          <Variable x:TypeArguments="x:String" Name="password" />
-          <Variable x:TypeArguments="x:String" Name="username" />
-        </Sequence.Variables>
+      <Sequence sap:VirtualizedContainerService.HintSize="486,1968" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Reddit - The heart of the internet" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1845.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Reddit - The heart of the internet" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1885" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1652" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1691" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'IMG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'IMG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="reddit.com" ContentHash="GW_Pxbd6S0m8COiKvEsoUA" DesignTimeRectangle="1850, 123, 40, 40" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="e85c8172-4913-49bc-8e6a-3834eec77ea4" InformativeScreenshot="c98caeed3dd33d4150141cd7994ecd4d.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/UlgXLaIaaUeUSN6rXMnnYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reddit - The heart of the internet' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'View Profile'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'View Profile'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="reddit.com" ContentHash="zWPaPNkgdESaDvNgZSyJqw" DesignTimeRectangle="1655, 182, 99, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='text-body-2' parentid='user-drawer-content' tag='SPAN' /&gt;" Guid="c6a693b1-018c-4832-886d-6830e067f51d" InformativeScreenshot="76e226fe25c0f8476f6911ac08060078.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/57vCuAJyi02l4N4jabnyaw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reddit - The heart of the internet' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="2" DisplayName="Click 'svg'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="2" DisplayName="Click 'svg'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
                   <uix:NClick.Target>
-                    <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="swLYnkAgb0eokVmolIvcww" DesignTimeRectangle="569, 324, 20, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='profile-header-main' tag='svg' /&gt;" Guid="a2ae7b74-6eaa-4204-90d3-e731e58ead88" InformativeScreenshot="91b8e7e438acd63a1434ca838340ef4b.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/CnzSxqpWSkuLWOTHe21TDA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    <uix:TargetAnchorable BrowserURL="reddit.com/user/Grand_Win_9630" ContentHash="Da0nF-rFdEqEHYN7THU9Tg" DesignTimeRectangle="539, 348, 48, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Edit profile avatar' tag='BUTTON' /&gt;" Guid="8a5b1dfc-e41e-464d-a23c-b9d93ba332f6" InformativeScreenshot="c1caee1ef5bf7c0bc84c2a0c44b717be.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/CnzSxqpWSkuLWOTHe21TDA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Grand_Win_9630 (u/Grand_Win_9630) - Reddit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click 'Select a new image'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click 'Select a new image'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="7cNIewv8xEShYyzr_zGtmg" DesignTimeRectangle="1069, 620, 130, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SETTINGS-AVATAR-IMAGE-UPLOAD' /&gt;&lt;webctrl aaname='Select a new image' shadowhostid='' tag='SPAN' type='' class='flex items-center gap-xs' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Select a new image' /&gt;" Guid="b1f3d15d-089c-4174-9df4-8ab0ff74c8df" InformativeScreenshot="1157c8cf255f18efa3c634bfd83bbaa1.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/J-ZTxf3yXUKGPS-Rg64R2w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -142,12 +148,12 @@
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click 'Edit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click 'Edit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="mPDrwOlY3Eew3kBOfKsfPA" DesignTimeRectangle="234, 505, 422, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="4cd73244-e5e0-47ac-9a8a-ce866576be22" InformativeScreenshot="4ad5c5b473f443b049af3313c9820daf.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/nO9u11kWI0aiLotw5WqKkw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Edit(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Text="[path]" Version="V5">
+                <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Edit(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Text="[in_ProfilePicPath]" Version="V5">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="8XuOGTuMwUqEiuGhU62B8g" DesignTimeRectangle="234, 505, 422, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="6df57bd1-830b-4147-b146-4a6a0c2bf6a3" InformativeScreenshot="4ad5c5b473f443b049af3313c9820daf.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/wrrB6HhgHUeX9mj32aWhhw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NTypeInto.Target>
@@ -162,12 +168,12 @@
                     </uix:VerifyExecutionTypeIntoOptions>
                   </uix:NTypeInto.VerifyOptions>
                 </uix:NTypeInto>
-                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="ctr5bzIE6Uq8w3LmorGo0g" DesignTimeRectangle="695, 537, 110, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" Guid="0638905e-3cb9-4ac5-b904-1c1e2bb35fe3" InformativeScreenshot="a653c0889bd3c4e9a9ee6cd3da1a833f.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/tuzezDDuE0u1f0Xyx6vVPw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="1" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
+                <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="1" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3216b8d8-a009-4c7d-96da-a197f6476aa9" Version="V5">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="reddit.com/user/Steven_Amin" ContentHash="4lmqkONjHkOs-NSH7zRXfQ" DesignTimeRectangle="1248, 710, 36, 48" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='profile-avatar-upload-modal-rpl-modal-card' tag='SPAN' type='' class='flex items-center gap-xs' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Save' /&gt;" Guid="0ba7b6e8-91f6-4efb-b27e-ab683c4e6c81" InformativeScreenshot="231c14e3f2ef611cbf462b79a6d50a3e.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/eDT1OLI-TEiOJv2hw7ethg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Steven_Amin (u/Steven_Amin) - Reddit' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                       <uix:TargetAnchorable.Anchors>
