@@ -1,0 +1,20 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Performers\\ProfileSync_PostingPerformer.xaml",
+      "uniqueId": "630fb4fb-427c-428d-8fef-709b89842754",
+      "type": "process"
+    },
+    {
+      "filePath": "Performers\\ProfileSync_ProfilePicPerformer.xaml",
+      "uniqueId": "63b9d932-2ff1-4a81-8611-173d37ed5718",
+      "type": "process"
+    },
+    {
+      "filePath": "ProfileSync_Dispatcher.xaml",
+      "uniqueId": "a72078b7-b459-4490-b047-a5651ff08881",
+      "type": "process"
+    }
+  ]
+}

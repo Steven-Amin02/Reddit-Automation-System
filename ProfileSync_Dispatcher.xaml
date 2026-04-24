@@ -115,35 +115,36 @@
       <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1267,8267" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1269,8236" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="1231,8244" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap:VirtualizedContainerService.HintSize="1231,8213" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:String[]" Name="arr_Platforms" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_Posts" />
         <Variable x:TypeArguments="s:DateTime" Name="date_ScheduledTime" />
         <Variable x:TypeArguments="x:String" Name="str_Content" />
-        <Variable x:TypeArguments="x:String" Name="str_Platforms" />
         <Variable x:TypeArguments="x:String" Name="str_ProfilePicPath" />
-        <Variable x:TypeArguments="x:String" Name="str_Email" />
-        <Variable x:TypeArguments="x:String" Name="str_Password" />
         <Variable x:TypeArguments="x:String" Name="str_ImagePath" />
         <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
         <Variable x:TypeArguments="x:Boolean" Name="bool_InstantPost" />
         <Variable x:TypeArguments="x:String" Name="str_ErrorMessage" />
         <Variable x:TypeArguments="x:Boolean" Name="bool_RecurringDaily" />
         <Variable x:TypeArguments="x:String" Name="str_LastRunDate" />
-        <Variable x:TypeArguments="x:String" Name="str_UserName" />
         <Variable x:TypeArguments="x:String" Name="str_RecurringTime" />
         <Variable x:TypeArguments="s:DateTime" Name="date_TargetPostpone" />
         <Variable x:TypeArguments="x:String" Name="str_SubReddit" />
         <Variable x:TypeArguments="x:String" Name="str_Title" />
+        <Variable x:TypeArguments="s:String[]" Name="arr_Email" />
+        <Variable x:TypeArguments="s:String[]" Name="arr_UserName" />
+        <Variable x:TypeArguments="s:String[]" Name="arr_Password" />
+        <Variable x:TypeArguments="x:Int32" Name="int_idx" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -151,84 +152,76 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1197,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Reading file...&quot;]" />
-      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1197,7986" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1197,7955" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
         <ueab:ExcelProcessScopeX.Body>
           <ActivityAction x:TypeArguments="ui:IExcelProcess">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1163,7876" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1163,7845" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1129,7812" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\SMAS - Excel File\SocialMediaPosts.xlsx">
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1129,7781" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\SMAS - Excel File\SocialMediaPosts.xlsx">
                 <ueab:ExcelApplicationCard.Body>
                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1095,7512" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1095,7481" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1061,207" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveTo="[dt_Posts]" />
-                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[rowIndex]" DataTable="[dt_Posts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1061,7241" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[rowIndex]" DataTable="[dt_Posts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1061,7210" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                         <ui:ForEachRow.Body>
                           <ActivityAction x:TypeArguments="sd:DataRow">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1059,7064" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1059,7033" sap2010:WorkflowViewState.IdRef="Sequence_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <If Condition="[String.IsNullOrWhiteSpace(CurrentRow(&quot;Status(don't fill)&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="1025,7000" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If Condition="[String.IsNullOrWhiteSpace(CurrentRow(&quot;Status(don't fill)&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="1025,6969" sap2010:WorkflowViewState.IdRef="If_1">
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1023,6772" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1023,6741" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="989,587" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="989,556" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                                       <ui:MultipleAssign.AssignOperations>
-                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="32">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
                                             <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[str_Email]</OutArgument>
+                                              <OutArgument x:TypeArguments="s:String[]">[arr_Email]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[CurrentRow("LoginEmail").ToString]</InArgument>
+                                              <InArgument x:TypeArguments="s:String[]">[CurrentRow("LoginEmail(separated by commas)").ToString.Split(","c)]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
                                             <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[str_UserName]</OutArgument>
+                                              <OutArgument x:TypeArguments="s:String[]">[arr_UserName]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[CurrentRow("UserName").ToString]</InArgument>
+                                              <InArgument x:TypeArguments="s:String[]">[CurrentRow("UserName(separated by commas)").ToString.Split(","c)]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
                                             <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[str_Password]</OutArgument>
+                                              <OutArgument x:TypeArguments="s:String[]">[arr_Password]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[CurrentRow("LoginPassword").ToString]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[str_Platforms]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[CurrentRow("Platforms(separated by commas)").ToString]</InArgument>
+                                              <InArgument x:TypeArguments="s:String[]">[CurrentRow("LoginPassword(separated by commas)").ToString.Split(","c)]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -236,7 +229,7 @@
                                               <OutArgument x:TypeArguments="s:String[]">[arr_Platforms]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="s:String[]">[str_Platforms.Split(","c)]</InArgument>
+                                              <InArgument x:TypeArguments="s:String[]">[CurrentRow("Platforms(separated by commas)").ToString.Split(","c)]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -322,7 +315,7 @@
                                         </scg:List>
                                       </ui:MultipleAssign.AssignOperations>
                                     </ui:MultipleAssign>
-                                    <ui:IfElseIfV2 Condition="[String.IsNullOrWhiteSpace(str_Platforms)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="989,1888" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
+                                    <ui:IfElseIfV2 Condition="[arr_Platforms.Length = 0]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="989,1888" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
                                       <ui:IfElseIfV2.Else>
                                         <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="987,94" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -410,7 +403,7 @@
                                               </Sequence>
                                             </ui:IfElseIfBlock.Then>
                                           </ui:IfElseIfBlock>
-                                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[str_Platforms.Contains(&quot;Twitter&quot;) AndAlso bool_RecurringDaily]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_6">
+                                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[arr_Platforms.Contains(&quot;Twitter&quot;) AndAlso bool_RecurringDaily]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_6">
                                             <ui:IfElseIfBlock.Then>
                                               <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="987,234" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                                 <sap:WorkflowViewStateService.ViewState>
@@ -496,7 +489,7 @@
                                                     <InArgument x:TypeArguments="s:DateTime">[DateTime.Today.Add(TimeSpan.Parse(str_RecurringTime))]</InArgument>
                                                   </Assign.Value>
                                                 </Assign>
-                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPlatform" sap:VirtualizedContainerService.HintSize="452,433" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[arr_Platforms]">
+                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[int_idx]" DisplayName="For Each currentPlatform" sap:VirtualizedContainerService.HintSize="452,433" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[arr_Platforms]">
                                                   <ui:ForEach.Body>
                                                     <ActivityAction x:TypeArguments="x:String">
                                                       <ActivityAction.Argument>
@@ -508,14 +501,14 @@
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:AddQueueItem TimeoutMS="{x:Null}" DeferDate="[date_TargetPostpone]" DisplayName="Add Queue Item" FolderPath="20231700150@cis.asu.edu.eg's workspace" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_6" Priority="Low" QueueType="Queue_ProfilePics">
+                                                        <ui:AddQueueItem TimeoutMS="{x:Null}" DeferDate="[date_TargetPostpone]" DisplayName="Add Queue Item" FolderPath="20231700150@cis.asu.edu.eg's workspace" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_6" Priority="Low" QueueType="Queue_SocialPosts">
                                                           <ui:AddQueueItem.ItemInformation>
                                                             <InArgument x:TypeArguments="x:String" x:Key="Content">[str_Content]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Platforms">[currentPlatform.Trim()]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Platforms">[currentPlatform.ToString.Trim]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="ImagePath">[str_ImagePath]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Email">[str_Email]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Password">[str_Password]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="UserName">[str_UserName]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Email">[arr_Email(int_idx).ToString.Trim]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Password">[arr_Password(int_idx).ToString.Trim]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="UserName">[arr_UserName(int_idx).ToString.Trim]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="SubReddit">[str_SubReddit]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="Title">[str_Title]</InArgument>
                                                           </ui:AddQueueItem.ItemInformation>
@@ -546,7 +539,7 @@
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPlatform" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arr_Platforms]">
+                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[int_idx]" DisplayName="For Each currentPlatform" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arr_Platforms]">
                                                   <ui:ForEach.Body>
                                                     <ActivityAction x:TypeArguments="x:String">
                                                       <ActivityAction.Argument>
@@ -558,14 +551,14 @@
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="20231700150@cis.asu.edu.eg's workspace" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="Queue_ProfilePics">
+                                                        <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="20231700150@cis.asu.edu.eg's workspace" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="Queue_SocialPosts">
                                                           <ui:AddQueueItem.ItemInformation>
                                                             <InArgument x:TypeArguments="x:String" x:Key="Content">[str_Content]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Platforms">[currentPlatform.Trim()]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Platforms">[currentPlatform.ToString.Trim]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="ImagePath">[str_ImagePath]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Email">[str_Email]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Password">[str_Password]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="UserName">[str_UserName]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Email">[arr_Email(int_idx).ToString.Trim]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Password">[arr_Password(int_idx).ToString.Trim]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="UserName">[arr_UserName(int_idx).ToString.Trim]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="SubReddit">[str_SubReddit]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="Title">[str_Title]</InArgument>
                                                           </ui:AddQueueItem.ItemInformation>
@@ -583,7 +576,7 @@
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPlatform" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[arr_Platforms]">
+                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[int_idx]" DisplayName="For Each currentPlatform" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[arr_Platforms]">
                                                   <ui:ForEach.Body>
                                                     <ActivityAction x:TypeArguments="x:String">
                                                       <ActivityAction.Argument>
@@ -595,14 +588,14 @@
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:AddQueueItem TimeoutMS="{x:Null}" DeferDate="[date_ScheduledTime]" DisplayName="Add Queue Item" FolderPath="20231700150@cis.asu.edu.eg's workspace" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="Queue_ProfilePics">
+                                                        <ui:AddQueueItem TimeoutMS="{x:Null}" DeferDate="[date_ScheduledTime]" DisplayName="Add Queue Item" FolderPath="20231700150@cis.asu.edu.eg's workspace" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="Queue_SocialPosts">
                                                           <ui:AddQueueItem.ItemInformation>
                                                             <InArgument x:TypeArguments="x:String" x:Key="Content">[str_Content]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="ImagePath">[str_ImagePath]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Platforms">[currentPlatform.Trim()]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Email">[str_Email]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="Password">[str_Password]</InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="UserName">[str_UserName]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Platforms">[currentPlatform.ToString.Trim]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Email">[arr_Email(int_idx).ToString.Trim]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="Password">[arr_Password(int_idx).ToString.Trim]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="UserName">[arr_UserName(int_idx).ToString.Trim]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="SubReddit">[str_SubReddit]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="Title">[str_Title]</InArgument>
                                                           </ui:AddQueueItem.ItemInformation>
@@ -634,7 +627,7 @@
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentPlatform" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[arr_Platforms]">
+                                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[int_idx]" DisplayName="For Each currentPlatform" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[arr_Platforms]">
                                             <ui:ForEach.Body>
                                               <ActivityAction x:TypeArguments="x:String">
                                                 <ActivityAction.Argument>
@@ -648,11 +641,11 @@
                                                   </sap:WorkflowViewStateService.ViewState>
                                                   <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="20231700150@cis.asu.edu.eg's workspace" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_3" Priority="Normal" QueueType="Queue_ProfilePics">
                                                     <ui:AddQueueItem.ItemInformation>
-                                                      <InArgument x:TypeArguments="x:String" x:Key="Platforms">[currentPlatform.Trim()]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String" x:Key="Platforms">[currentPlatform.ToString.Trim]</InArgument>
                                                       <InArgument x:TypeArguments="x:String" x:Key="ProfilePicPath">[str_ProfilePicPath]</InArgument>
-                                                      <InArgument x:TypeArguments="x:String" x:Key="Email">[str_Email]</InArgument>
-                                                      <InArgument x:TypeArguments="x:String" x:Key="Password">[str_Password]</InArgument>
-                                                      <InArgument x:TypeArguments="x:String" x:Key="UserName">[str_UserName]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String" x:Key="Email">[arr_Email(int_idx).ToString.Trim]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String" x:Key="Password">[arr_Password(int_idx).ToString.Trim]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String" x:Key="UserName">[arr_UserName(int_idx).ToString.Trim]</InArgument>
                                                     </ui:AddQueueItem.ItemInformation>
                                                   </ui:AddQueueItem>
                                                 </Sequence>

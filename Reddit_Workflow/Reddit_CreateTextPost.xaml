@@ -102,7 +102,7 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CreateTextPost" sap:VirtualizedContainerService.HintSize="1281,1953" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CreateTextPost" sap:VirtualizedContainerService.HintSize="1267,1953" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -191,7 +191,7 @@
               </uix:NTypeInto>
               <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayAfter="1" DelayBefore="1" DisplayName="Click 'R-POST-FORM-SUBMIT-BUTT…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1cb7921f-69ee-4398-9120-0d6f52632d3b" Version="V5">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="reddit.com/r/learnprogramming/submit" ContentHash="otY2T19oukOQMPxGy9dPFQ" DesignTimeRectangle="1291, 784, 64, 50" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit-post-button' tag='R-POST-FORM-SUBMIT-BUTTON' /&gt;" Guid="2001e5b0-f430-4b88-9558-a0a2fc48ef78" InformativeScreenshot="1308c33b455ba02091903e588f3747e4.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/zzXNvhDor0OMZmhoGXdBJA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to r/learnprogramming' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="reddit.com/user/Grand_Win_9630/submit" ContentHash="v3s_n9EoQ0CIMa7XYz39MQ" DesignTimeRectangle="1285, 794, 76, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit-post-button' tag='R-POST-FORM-SUBMIT-BUTTON' /&gt;&lt;webctrl id='inner-post-submit-button' shadowhostid='submit-post-button' tag='BUTTON' /&gt;" Guid="ba4a1ace-4190-4329-b58b-8062805fd52b" InformativeScreenshot="3ecb3632c5b5b4ea18368555aea9825b.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/zzXNvhDor0OMZmhoGXdBJA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to u/Grand_Win_9630' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
             </Sequence>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="otY2T19oukOQMPxGy9dPFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="v3s_n9EoQ0CIMa7XYz39MQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/r/learnprogramming/submit" DesignTimeRectangle="1291, 784, 64, 50" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit-post-button' tag='R-POST-FORM-SUBMIT-BUTTON' /&gt;" Guid="2001e5b0-f430-4b88-9558-a0a2fc48ef78" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to r/learnprogramming' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="1308c33b455ba02091903e588f3747e4.jpg" xmlns="">0Qvvn6Wba2UOT9rVVJbzOTg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="reddit.com/user/Grand_Win_9630/submit" DesignTimeRectangle="1285, 794, 76, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit-post-button' tag='R-POST-FORM-SUBMIT-BUTTON' /&gt;&lt;webctrl id='inner-post-submit-button' shadowhostid='submit-post-button' tag='BUTTON' /&gt;" Guid="ba4a1ace-4190-4329-b58b-8062805fd52b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submit to u/Grand_Win_9630' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3ecb3632c5b5b4ea18368555aea9825b.jpg" xmlns="">0Mk3HVoyVnUO94G_aSna6yA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
