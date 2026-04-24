@@ -1,53 +1,67 @@
-# Reddit Automation System (UiPath)
+# ProfileSync RPA Automation
 
-UiPath automation project that logs in to Reddit, updates the profile picture, and creates text posts.
+## Overview
+ProfileSync is an enterprise-grade Robotic Process Automation (RPA) solution built with **UiPath**. It utilizes a robust **Dispatcher-Performer architecture** to automate social media management, specifically handling the distribution of posts and profile synchronizations across multiple platforms (e.g., Twitter, LinkedIn).
 
-## Features
-- Login to Reddit (Microsoft Edge / Modern UI Automation)
-- Update profile picture (upload from a local file path)
-- Create a **text** post to a specified subreddit
-- Designed for reliability (recommended: Retry Scope + element-based verification)
+This project relies on UiPath Orchestrator for workload distribution, utilizing Queues and Triggers to achieve seamless, unattended execution.
 
-> Note: Your repository may currently have workflows at the root. The structure above is the target best-practice layout for maintainability.
-## Requirements
-- Windows
-- UiPath Studio (Modern experience recommended)
-- Microsoft Edge
-- UiPath packages (as in `project.json`):
-  - `UiPath.System.Activities`
-  - `UiPath.UIAutomation.Activities`
+---
 
-## Setup
-1. Clone the repository.
-2. Open `project.uiproj` in UiPath Studio.
-3. Restore dependencies when prompted.
-4. Configure credentials and inputs:
-   - **Credentials:** Use Orchestrator Credential Assets (recommended) or Windows Credential Manager.
-   - **Do not store passwords in plain text** in workflows or Excel.
+## 🏗️ Architecture
 
-## How to Run
-1. Open `Main.xaml`.
-2. Run in Debug mode.
+The solution is divided into two primary operational phases to ensure scalability and fault tolerance:
 
-### Suggested Inputs (Config)
-If you use an external config file (e.g., `Data/Config.xlsx`), store values such as:
-- `RedditUrl` (default: `https://www.reddit.com`)
-- `Username`
-- `ProfileImagePath`
-- `Subreddit`
-- `PostTitle`
-- `PostBody`
-- Feature toggles: `DoUpdateProfilePic`, `DoCreatePost`
+### 1. The Dispatcher (`ProfileSync_Dispatcher`)
+* **Role:** The data producer.
+* **Functionality:** Reads the local `SocialMediaPosts.xlsx` database. It processes complex rows where a single entry might target multiple platforms (e.g., `"Twitter, LinkedIn"`).
+* **Data Transformation:** Uses synchronized array indexing to dynamically split distinct credentials (Emails, Passwords, Usernames) and map them to their specific target platforms.
+* **Output:** Pushes perfectly structured Transaction Items into the UiPath Orchestrator Queue, appending specific content (backpack) for the performers to consume.
 
-## Reliability Notes (important)
-- Prefer **element-based waits** (`Check App State`, `Element Exists`) over long fixed delays.
-- Wrap **submit + verify** in a **Retry Scope** (e.g., 3 retries) for login.
-- Reddit may occasionally trigger CAPTCHA or additional verification steps; unattended automation may fail in those cases.
+### 2. The Performers (Inside `Performers/` Folder)
+* **Role:** The data consumers.
+* **Modules:** * `Social_Performer.xaml` (Handles social media posting workflows)
+  * `ProfilePic_Performer.xaml` (Handles profile picture synchronization workflows)
+* **Functionality:** Woken up automatically by Orchestrator Queue Triggers. Each Performer extracts the `SpecificContent` (TargetPlatform, Email, Password, UserName) from the queue item, logs into the designated web platform via Edge/Chrome, and executes the UI automation.
 
-## Security Notes
-- Do not commit secrets (passwords, tokens, cookies).
-- Use SecureString / Credential activities for passwords.
-- Keep `.gitignore` updated to exclude generated/studio artifacts where appropriate.
+---
 
-## Disclaimer
-This project is for educational purposes. Ensure your automation complies with Reddit’s Terms of Service and community rules, and avoid spammy behavior.
+## ⚙️ Orchestrator Configuration
+
+To deploy this project to the cloud, the following Orchestrator components are required within **My Workspace**:
+
+1. **Queues:**
+   * `SocialMedia_Queue` (Auto-retry enabled, Specific Content validation).
+2. **Processes:**
+   * `Process_Dispatcher` (Entry Point: `Main.xaml` or `ProfileSync_Dispatcher.xaml`)
+   * `Process_SocialPerformer` (Entry Point: `Performers/Social_Performer.xaml`)
+   * `Process_ProfilePics` (Entry Point: `Performers/ProfilePic_Performer.xaml`)
+3. **Triggers:**
+   * **Time Trigger:** Scheduled to run `Process_Dispatcher` unattended at designated intervals.
+   * **Queue Triggers:** Linked to the Queues to instantly launch the Performers when new items arrive. *(Set to: 1 minimum item, 1 maximum simultaneous job, and "reassess conditions" enabled to handle bulk drops).*
+
+---
+
+## 📊 Data Input Structure
+
+The Dispatcher expects an Excel file (`SocialMediaPosts.xlsx`) with the following column structure. The bot is capable of reading comma-separated values to generate cloned transactions for cross-platform posting.
+
+| Platforms | Emails | Passwords | Usernames |
+| :--- | :--- | :--- | :--- |
+| Twitter, LinkedIn | user1@mail.com, user2@mail.com | pass1, pass2 | usr_1, usr_2 |
+
+---
+
+## 🚀 Setup & Installation
+
+1. Clone the repository to your local machine.
+2. Open the project folder in **UiPath Studio**.
+3. Ensure the UiPath Web Automation extension is installed and enabled in your browser.
+4. Verify that `Social_Performer.xaml` and `ProfilePic_Performer.xaml` have **Enable Entry Point** activated in the Project panel.
+5. Click **Publish** to send the consolidated package to your Orchestrator Tenant.
+6. Provision an **Unattended Robot** profile in Orchestrator (linking your Windows `domain\username` and password) if utilizing Time Triggers.
+
+---
+
+## 🎓 Academic Context
+
+Developed by students at **Ain Shams University, Faculty of Computer and Information Sciences**. This project demonstrates the practical application of enterprise RPA design patterns, queue management, and unattended cloud automation.
