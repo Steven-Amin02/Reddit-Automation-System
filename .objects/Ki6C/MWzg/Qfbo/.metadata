@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Omar - Quora",
+  "Type": "Screen",
+  "Id": "QfboATvQP02YClR7XXJVIQ",
+  "Reference": "aFzI3n0Yi0y89QDoYmAtZA/QfboATvQP02YClR7XXJVIQ",
+  "ParentRef": "aFzI3n0Yi0y89QDoYmAtZA/MWzgX2lSVUOdBVjPcgkplg",
+  "Created": "2026-05-18T08:58:10.1144374Z",
+  "Updated": "2026-05-18T08:58:10.1144374Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.30.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

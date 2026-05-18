@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Quora_Question" this:Quora_Question.in_PostPicPath="D:\01-InBox\quora.png" this:Quora_Question.in_Content="Test TestTest Test Test Test Test Test Test Test" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Quora_Question" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_PostPicPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_ImagePath" Type="InArgument(x:String)" />
     <x:Property Name="in_Content" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
@@ -102,31 +102,31 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Quora_Question" sap:VirtualizedContainerService.HintSize="876.4000000000001,2008.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Quora_Question" sap:VirtualizedContainerService.HintSize="1338,2043" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="484.8,1985.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="486,2020" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Quora" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1902.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Quora" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1937" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1708.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1743" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="3" DisplayName="Click Post" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="3" DisplayName="Click Post" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="quora.com" ContentHash="7pgZ3FRMhk2D_0j0IJm44w" DesignTimeRectangle="935, 310, 241, 37" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Post' aria-role='button' parentid='mainContent' tag='BUTTON' type='' class='q-click-wrapper b10gcu9l bobc9nh b1cg7ppz c1nud10e qu-active--bg--darken qu-borderRadius--pill qu-alignItems--center qu-justifyContent--center qu-whiteSpace--nowrap qu-userSelect--none qu-display--flex qu-tapHighlight--white qu-textAlign--center qu-cursor--pointer qu-hover--bg--darken' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Post' /&gt;" Guid="03caeac7-f8d0-4409-8919-7f28bc82c43d" InformativeScreenshot="55ace3882c749693dfb980ff8465f8be.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/u8lvTNppaESkfZBKXvWGmA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quora' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -137,12 +137,12 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'TEXTAREA'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,328.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][k(Back)][u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'TEXTAREA'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,333" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][k(Back)][u(hk)]" Version="V5">
                 <uix:NKeyboardShortcuts.Target>
                   <uix:TargetAnchorable BrowserURL="quora.com" ContentHash="raz1A2L_BkCB_0AC4HwyaA" DesignTimeRectangle="534, 460, 851, 325" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='root' tag='DIV' /&gt;" Guid="8f954b6d-602c-4ae0-9677-1c768ab4601f" InformativeScreenshot="3fe14f7bb9d88f13b692a23bcfcb133a.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/gToOe6ZqpU-wCYGyx1qdBA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quora' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NKeyboardShortcuts.Target>
               </uix:NKeyboardShortcuts>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="2" DelayBetweenKeys="0.1" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Text="[in_Content]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="2" DelayBetweenKeys="0.1" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Text="[in_Content]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="quora.com" ContentHash="raz1A2L_BkCB_0AC4HwyaA" DesignTimeRectangle="534, 460, 851, 325" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='root' tag='DIV' /&gt;" Guid="8f954b6d-602c-4ae0-9677-1c768ab4601f" InformativeScreenshot="3fe14f7bb9d88f13b692a23bcfcb133a.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/gToOe6ZqpU-wCYGyx1qdBA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quora' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
@@ -157,12 +157,12 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Image" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Image" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="quora.com" ContentHash="UmKt0SsD5keJxhusKfBVNA" DesignTimeRectangle="639, 893, 30, 30" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='3' parentid='modal_footer_portal_container' tag='svg' /&gt;" Guid="791b4490-04f2-400f-b2e8-a5602b6bcbc2" InformativeScreenshot="c2dca03f8e5334b36ef33c209fa6245c.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/Lyl4I6F870iOWoy9XH5QvQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quora' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="2" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Text="[in_PostPicPath]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="2" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Text="[in_ImagePath]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="quora.com" ContentHash="NPJFppYbA0CFYJjX6XcqJQ" DesignTimeRectangle="234, 505, 422, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="57c88676-37bd-40cb-805c-a83c68a68eb5" InformativeScreenshot="bb8285ff6f36ff74b49a03316857a6c2.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/5AVYgbqW3U6eAnnyg6vpLg" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
@@ -177,12 +177,12 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,256.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Post'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Version="V5">
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,261" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Post'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e83d07a-5cfd-4a47-9099-f2b3e67a1620" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="quora.com" ContentHash="mk4WmFOGPU2cPtj6Gh5Z5w" DesignTimeRectangle="1330, 263, 84, 47" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='q-click-wrapper puppeteer_test_modal_submit b17i7nxr b1l8alrs bobc9nh b1cg7ppz c1nud10e qu-active--textDecoration--none qu-focus--textDecoration--none qu-borderRadius--pill qu-alignItems--center qu-justifyContent--center qu-whiteSpace--nowrap qu-userSelect--none qu-display--inline-flex qu-bg--blue qu-tapHighlight--white qu-textAlign--center qu-cursor--pointer qu-hover--textDecoration--none' aaname='Post' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Post' /&gt;" Guid="f9449dfd-f84e-4c83-bf14-2835a2e9f123" InformativeScreenshot="b49aa5a1b7b25ae0304f1f8165e37d6d.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/Qpto2wtkKE-Z4HOqkpJtDA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quora' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="1355, 275, 34, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Post' parentid='root' tag='DIV' type='' class='q-text qu-ellipsis qu-whiteSpace--nowrap' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Post' /&gt;" Guid="8e26b280-f068-4a56-8c15-66d766af63e7" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>

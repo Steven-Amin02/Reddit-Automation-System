@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="LinkedIn_Login" this:LinkedIn_Login.in_Password="!2Qwerty" this:LinkedIn_Login.in_Email="omoswaken@gmail.com" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="LinkedIn_Login" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Password" Type="InArgument(x:String)" />
     <x:Property Name="in_Email" Type="InArgument(x:String)" />
@@ -106,39 +106,39 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LinkedIn_Login" sap:VirtualizedContainerService.HintSize="876.4000000000001,1605.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LinkedIn_Login" sap:VirtualizedContainerService.HintSize="1338,1623" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="520,1582.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="522,1600" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Microsoft Rewards" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1499.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="d7a426b5-8a7e-4327-9abd-11f34e38bdea" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Microsoft Rewards" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1517" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="d7a426b5-8a7e-4327-9abd-11f34e38bdea" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1305.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1323" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckState DisplayName="Check Not Logged In" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,1245.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d7a426b5-8a7e-4327-9abd-11f34e38bdea" Timeout="3" Version="V5">
+              <uix:NCheckState DisplayName="Check Not Logged In" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1259" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d7a426b5-8a7e-4327-9abd-11f34e38bdea" Timeout="3" Version="V5">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,736" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,745" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="2" DelayBetweenKeys="0.1" DisplayName="Type Into Email" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="d7a426b5-8a7e-4327-9abd-11f34e38bdea" Text="[in_Email]" Version="V5">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="2" DelayBetweenKeys="0.1" DisplayName="Type Into Email" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="d7a426b5-8a7e-4327-9abd-11f34e38bdea" Text="[in_Email]" Version="V5">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="quora.com" ContentHash="F6QFDuTb4kyOj9zKFAQ6DQ" DesignTimeRectangle="1010, 564, 355, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='q-input qu-fontSize--regular qu-lineHeight--regular TextInput___StyledInput-sc-94591a0e-0 iKIxtV focus-visible' placeholder='Your email' aaname='Email' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f8c76487-97bf-40bf-bf06-808602007e30" InformativeScreenshot="9b81c1f4ba68518981e3c6dc3f7ad7af.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/NQYRBM52IU-P1RoY5oIRGA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quora - A place to share knowledge and better understand the world' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -184,7 +184,7 @@
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="quora.com" ContentHash="KXrp0fphI0KVjPwZvps83A" DesignTimeRectangle="1282, 732, 95, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='q-click-wrapper b17i7nxr b1l8alrs bobc9nh b1cg7ppz c1nud10e qu-active--textDecoration--none qu-focus--textDecoration--none qu-borderRadius--pill qu-alignItems--center qu-justifyContent--center qu-whiteSpace--nowrap qu-userSelect--none qu-display--inline-flex qu-bg--blue qu-tapHighlight--white qu-textAlign--center qu-cursor--pointer qu-hover--textDecoration--none' aaname='Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Login' /&gt;" Guid="8ccdef36-2574-4f09-ad6b-244f4ab794b0" InformativeScreenshot="6230542f2c812fc63aae5df5234c905b.jpg" Reference="aFzI3n0Yi0y89QDoYmAtZA/5j8yBUO8Okan_V0Uftn58w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quora - A place to share knowledge and better understand the world' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="1307, 745, 45, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Login' type='' parentid='root' tag='DIV' class='q-text qu-ellipsis qu-whiteSpace--nowrap' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Login' /&gt;" Guid="ba748bda-d498-4e30-b8f6-9561761f3227" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
